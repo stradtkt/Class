@@ -21,7 +21,17 @@ public class TvShow {
         this.imageId = imageId;
         this.seasons = new ArrayList<>();
     }
-    public TvShow() {
+    public TvShow(String title, String status, String network, String rating, String airDate, int imageId, String[] episodeNames, int seasonNumber) {
+        this.title = title;
+        this.status = status;
+        this.network = network;
+        this.rating = rating;
+        this.airDate = airDate;
+        this.imageId = imageId;
+        this.seasons = new ArrayList<>();
+        this.seasons.add(new Season(seasonNumber, episodeNames));
+    }
+    public TvShow(String stranger_things, String continuing, String netflix, String rating, String airDate, int poster, int i, String[] episodeNames) {
         this.title = DEFAULT_TITLE;
         this.status = DEFAULT_STATUS;
         this.network = DEFAULT_NETWORK;
