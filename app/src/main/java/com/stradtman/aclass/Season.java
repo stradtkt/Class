@@ -24,4 +24,15 @@ public class Season {
     public String getLastEpisode() {
         return episodeNames.get(episodeNames.size() - 1);
     }
+
+    public int getSeasonNumber() {
+        return seasonNumber;
+    }
+
+    public String getEpisode(int index) {
+        return episodeNames.get(index);
+    }
+    public int getNumEpisodes() {
+        return episodeNames.size();
+    }
 }

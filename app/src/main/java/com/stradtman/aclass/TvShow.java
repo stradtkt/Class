@@ -10,7 +10,7 @@ public class TvShow {
     public static final String DEFAULT_AIR_DATE = "1-1-1970";
     private String title, status, network, rating, airDate;
     private int imageId;
-    public ArrayList<Season> seasons;
+    private ArrayList<Season> seasons;
 
     public TvShow(String title, String status, String network, String rating, String airDate, int imageId) {
         this.title = title;
@@ -41,4 +41,22 @@ public class TvShow {
         this.seasons = new ArrayList<>();
     }
 
+    public String getTitle() {
+        return this.title;
+    }
+    public int getSeasonNumber(int index) {
+        return seasons.get(index).getSeasonNumber();
+    }
+    public String getEpisodeName(int seasonNumber, int episodeIndex) {
+        return seasons.get(seasonNumber).getEpisode(episodeIndex);
+    }
+    public int getNumSeasons() {
+        return seasons.size();
+    }
+    public int getNumEpisodes(int seasonIndex) {
+        return seasons.get(seasonIndex).getNumEpisodes();
+    }
+    public int getImageId() {
+        return this.imageId;
+    }
 }
