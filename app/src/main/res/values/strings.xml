@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Class</string>
+    <string name="dolor_sit_amet_consectetur_adipiscing_elit_fusce_faucibus_justo_eget_mi_egestas_iaculis_aliquam_nec_velit_at_massa_semper_efficitur_vel_a_nunc_maecenas_sed_aliquet_felis_morbi_rutrum_maximus_maximus_class_aptent_taciti_sociosqu_ad_litora_torquent_per_conubia_nostra_per_inceptos_himenaeos">dolor sit amet, consectetur adipiscing elit. Fusce faucibus justo eget mi egestas iaculis. Aliquam nec velit at massa semper efficitur vel a nunc. Maecenas sed aliquet felis. Morbi rutrum maximus maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</string>
+    <string name="stranger_things">Stranger Things</string>
 </resources>

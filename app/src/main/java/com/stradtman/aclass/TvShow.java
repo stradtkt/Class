@@ -3,9 +3,14 @@ package com.stradtman.aclass;
 import java.util.ArrayList;
 
 public class TvShow {
+    public static final String DEFAULT_TITLE = "Your Title Here";
+    public static final String DEFAULT_STATUS = "Ended";
+    public static final String DEFAULT_NETWORK = "Local";
+    public static final String DEFAULT_RATING = "NR";
+    public static final String DEFAULT_AIR_DATE = "1-1-1970";
     private String title, status, network, rating, airDate;
     private int imageId;
-    private ArrayList<Season> seasons;
+    public ArrayList<Season> seasons;
 
     public TvShow(String title, String status, String network, String rating, String airDate, int imageId) {
         this.title = title;
@@ -14,7 +19,16 @@ public class TvShow {
         this.rating = rating;
         this.airDate = airDate;
         this.imageId = imageId;
+        this.seasons = new ArrayList<>();
     }
-
+    public TvShow() {
+        this.title = DEFAULT_TITLE;
+        this.status = DEFAULT_STATUS;
+        this.network = DEFAULT_NETWORK;
+        this.rating = DEFAULT_RATING;
+        this.airDate = DEFAULT_AIR_DATE;
+        this.imageId = 0;
+        this.seasons = new ArrayList<>();
+    }
 
 }
